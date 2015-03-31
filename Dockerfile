@@ -11,7 +11,7 @@ RUN apt-get update
 RUN apt-get install -y mysql-client
 
 ENV PHPMYADMIN_VERSION 4.3.9
-ENV MAX_UPLOAD "50M"
+ENV MAX_UPLOAD "1000M"
 
 RUN wget http://downloads.sourceforge.net/project/phpmyadmin/phpMyAdmin/${PHPMYADMIN_VERSION}/phpMyAdmin-${PHPMYADMIN_VERSION}-english.tar.bz2
 RUN tar -xvjf /phpMyAdmin-${PHPMYADMIN_VERSION}-english.tar.bz2 -C /
